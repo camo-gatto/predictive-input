@@ -9,7 +9,7 @@ app.controller('predictive', function($scope) {
     
 });
 
-app.directive('typing', function() {
+app.directive('predictiveTyping', function() {
     return {
         restrict: 'A',
         require: 'ngModel',
