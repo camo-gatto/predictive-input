@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app.js"></script>
+<style>
+    body    { padding-top:50px; background-color: #fcfcfc;}
+    #messages {
+        overflow: auto;
+        height: 200px;
+        overflow-y: visible;
+    }
+</style>    
+</head>
+<body class="container" ng-app="predictiveInput" ng-controller="predictive">
+
+
+    <main>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="jumbotron word-container">
+                    <span ng-click="select(word)" class="word" ng-repeat="word in words | filter:typingWord" ng-class="{'matched-word' : typingWord==word}">{{word}}</span>   
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">{{w}}
+                <div class="form-group form-group-lg"><input typing typing-word="typingWord" ng-trim="false" type="text" name="pwd" ng-model="text" class="form-control" placeholder="text"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>

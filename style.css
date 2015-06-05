@@ -1,0 +1,14 @@
+.word {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.matched-word {
+    background-color: ghostwhite;
+    border-radius: 2px;
+    padding: 4px 4px 4px 4px;
+}
+
+.word-container {
+    word-break: break-word;
+}
