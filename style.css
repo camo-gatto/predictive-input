@@ -4,11 +4,14 @@
 }
 
 .matched-word {
-    background-color: ghostwhite;
+    /*background-color: ghostwhite;
     border-radius: 2px;
-    padding: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;*/
+    color: crimson;
+    font-weight:800;
 }
 
 .word-container {
     word-break: break-word;
+    padding: 10px 10px 10px 10px !important;
 }
